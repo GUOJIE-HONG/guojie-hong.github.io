@@ -1,542 +1,430 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GuoJie's Portfolio Web</title>
-    <!-- font awesome -->
+    <title>洪國傑 | ASP.NET / C# 後端工程師</title>
+    <meta
+      name="description"
+      content="洪國傑（GuoJie），ASP.NET / C# 後端工程師。從需求理解、資料設計與 API 實作，一路做到測試、部署與維護。"
+    />
+    <meta name="theme-color" content="#1B2730" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="洪國傑 | ASP.NET / C# 後端工程師" />
+    <meta
+      property="og:description"
+      content="從需求理解、資料設計與 API 實作，一路做到測試、部署與維護。"
+    />
+    <meta property="og:url" content="https://guojie-hong.github.io/PortfolioWeb/" />
+    <meta
+      property="og:image"
+      content="https://guojie-hong.github.io/PortfolioWeb/assets/PortfplioImg.jpg"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='27' fill='%231B2730' stroke='%23F2A51A' stroke-width='8'/%3E%3Cpath fill='%23F3F4F0' d='M25.7 41Q23.7 41 22.3 40.3Q20.8 39.5 19.9 38.2Q19 37 18.5 35.3Q18.1 33.7 18.1 32Q18.1 30.4 18.5 28.8Q19 27.2 19.9 25.9Q20.9 24.6 22.3 23.8Q23.8 22.9 25.7 22.9Q27.4 22.9 28.6 23.5Q29.8 24.1 30.6 24.9Q31.5 25.8 32.1 26.8L28.9 28.6Q28.4 27.7 27.6 27Q26.8 26.4 25.7 26.4Q24.6 26.4 23.8 26.9Q23.1 27.4 22.6 28.3Q22.2 29.1 22 30.1Q21.8 31.1 21.8 32Q21.8 33.1 22 34.1Q22.2 35.1 22.7 35.9Q23.2 36.7 23.9 37.1Q24.7 37.6 25.7 37.6Q26.5 37.6 27.1 37.3Q27.8 36.9 28.2 36.3Q28.6 35.8 28.6 35.1L28.6 34.9L25.7 34.9L25.7 31.4L32.3 31.4L32.3 34.1Q32.3 36.4 31.4 37.9Q30.5 39.5 29.1 40.3Q27.6 41 25.7 41M39.9 41Q38 41 36.5 40Q34.9 38.9 34 37L37.2 35.5Q37.7 36.5 38.3 37Q39 37.6 39.9 37.6Q40.4 37.6 40.8 37.4Q41.2 37.3 41.6 37Q41.9 36.6 42.1 36Q42.3 35.4 42.3 34.4L42.3 23.3L45.9 23.3L45.9 34.6Q45.9 36.5 45.4 37.7Q44.8 39 43.9 39.7Q43 40.4 42 40.7Q40.9 41 39.9 41'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Overpass:wght@500;700;800&display=swap"
     />
-    <!-- Bootstrap.CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstraps icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- animation css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="css/link.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="logo navbar-brand" href="#home"
-            >GJ <span class="text-danger">GuoJie</span></a
-          >
+    <a class="skip" href="#main">跳到主要內容</a>
+
+    <header class="topbar">
+      <div class="topbar__inner wrap">
+        <a class="brand" href="#top">
+          <span class="badge badge--sm" aria-hidden="true">GJ</span>
+          <span class="brand__name">洪國傑</span>
+        </a>
+        <nav class="minimap" aria-label="頁面路線">
           <button
-            class="navbar-toggler"
+            class="minimap__toggle"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-controls="minimap-list"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="minimap__now" data-now>站名牌</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+            <span class="visually-hidden">，開啟頁面路線</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">Education & experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+          <ol class="minimap__list" id="minimap-list">
+            <li>
+              <a href="#top" data-stop="top"
+                ><span class="minimap__dot" aria-hidden="true"></span
+                ><span class="minimap__label">站名牌</span></a
+              >
+            </li>
+            <li>
+              <a href="#GJ04" data-stop="GJ04"
+                ><span class="minimap__dot" aria-hidden="true"></span
+                ><span class="minimap__label">本站</span></a
+              >
+            </li>
+            <li>
+              <a href="#flow" data-stop="flow"
+                ><span class="minimap__dot" aria-hidden="true"></span
+                ><span class="minimap__label">驗證流程</span></a
+              >
+            </li>
+            <li>
+              <a href="#network" data-stop="network"
+                ><span class="minimap__dot" aria-hidden="true"></span
+                ><span class="minimap__label">能力路網</span></a
+              >
+            </li>
+            <li>
+              <a href="#past" data-stop="past"
+                ><span class="minimap__dot" aria-hidden="true"></span
+                ><span class="minimap__label">已過站</span></a
+              >
+            </li>
+            <li>
+              <a href="#GJ05" data-stop="GJ05"
+                ><span class="minimap__dot" aria-hidden="true"></span
+                ><span class="minimap__label">下一站</span></a
+              >
+            </li>
+          </ol>
+          <span class="minimap__train" aria-hidden="true"></span>
+        </nav>
+      </div>
     </header>
-    <main>
-      <!-- 首頁 -->
-      <section id="home">
-        <div class="container mt-3">
-          <div class="row align-items-center home-row">
-            <div class="col-12 col-md-6 order-2 order-md-1 home-content">
-              <h1 class="text-secondary">
-                Hello, It's <span class="text-danger">GuoJie</span>
-              </h1>
-              <h3>
-                I'm passionate in<br /><span class="text text-danger"></span>
-              </h3>
-              <p class="mt-3 fs-5">
-                熱衷於後端 C# .Net
-                core和SQL，包含前端的語言及框架也有一定的了解。
-                對程式的熱情激勵我不斷學習和進步，確保專業知識與最新的行業發展保持一致。
-                在自我精進的過程不僅增強了解決問題的能力，也讓我能夠快速掌握新工具和技術，有效應對各種發展挑戰!
-              </p>
-              <div class="social-icons fs-3 m-2">
-                <a
-                  href="https://github.com/GUOJIE526"
-                  class="ms-3 text-danger"
-                  target="_blank"
-                  ><i class="bi bi-github"></i
-                ></a>
-                <a
-                  href="https://www.instagram.com/guojie.hong/"
-                  class="ms-3 text-danger"
-                  target="_blank"
-                  ><i class="bi bi-instagram"></i
-                ></a>
-                <a
-                  href="https://www.facebook.com/kuojay.hung"
-                  class="ms-3 text-danger"
-                  target="_blank"
-                  ><i class="bi bi-meta"></i
-                ></a>
-              </div>
-              <div class="home-actions">
-                <a
-                  href="file/Resume.pdf"
-                  target="_blank"
-                  class="btn btn-outline-danger rounded-pill"
-                  >Download Resume</a
-                >
-                <a
-                  href="file/project.pdf"
-                  target="_blank"
-                  class="btn btn-outline-danger rounded-pill"
-                  >Download Portfolio</a
-                >
-              </div>
-            </div>
-            <div
-              id="myPhoto"
-              class="wow animate__animated animate__jello home-img col-12 col-md-6 order-1 order-md-2"
-            >
-              <img
-                src="./assets/PortfplioImg.jpg"
-                alt="Portrait of GuoJie"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 學經歷 -->
-      <section id="education">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="text-center">
-                Education & <span class="text-danger">Experience</span>
-              </h2>
-            </div>
-            <div class="col-12">
-              <div class="row">
-                <div
-                  class="wow animate__animated animate__bounceIn col-12 col-lg-6 mt-3 bg-danger rounded-pill text-center timeline"
-                >
-                  <div
-                    class="wow animate__animated animate__bounceInLeft timeline-content mt-2"
-                  >
-                    <span>2008</span>
-                    <h3>High School</h3>
-                    <p>高雄市立仁武高級中學</p>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6"></div>
-                <div class="col-12 col-lg-6"></div>
-                <div
-                  class="wow animate__animated animate__bounceIn col col-lg-6 mt-3 bg-danger rounded-pill text-center timeline"
-                >
-                  <div
-                    class="wow animate__animated animate__bounceInRight timeline-content mt-2"
-                  >
-                    <span>2013</span>
-                    <h3>University</h3>
-                    <p>台北市中國文化大學-德國語文學系</p>
-                  </div>
-                </div>
-                <div
-                  class="wow animate__animated animate__bounceIn col-12 col-lg-6 mt-3 bg-danger rounded-pill text-center timeline"
-                >
-                  <div
-                    class="wow animate__animated animate__bounceInLeft timeline-content mt-2"
-                  >
-                    <span>2015-2024</span>
-                    <h3>Work Experience</h3>
-                    <p>ASE Equipment maintenance technician</p>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6"></div>
-                <div class="col-12 col-lg-6"></div>
-                <div
-                  class="wow animate__animated animate__bounceIn col-12 col-lg-6 mt-3 bg-danger rounded-pill text-center timeline"
-                >
-                  <div
-                    class="wow animate__animated animate__bounceInRight timeline-content mt-2"
-                  >
-                    <span>2024</span>
-                    <h3>University</h3>
-                    <p>高雄市正修科技大學-資訊工程學系</p>
-                  </div>
-                </div>
-                <div
-                  class="wow animate__animated animate__bounceIn col-12 col-lg-6 mt-3 bg-danger rounded-pill text-center timeline"
-                >
-                  <div
-                    class="wow animate__animated animate__bounceInLeft timeline-content mt-2"
-                  >
-                    <span>2024 Jun-Nov</span>
-                    <h3>Refresher course</h3>
-                    <p>資展國際-全端工程師養成班 582hr培訓</p>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6"></div>
-                <div class="col-12 col-lg-6"></div>
-                <div
-                  class="wow animate__animated animate__bounceIn col-12 col-lg-6 mt-3 bg-danger rounded-pill text-center timeline"
-                >
-                  <div
-                    class="wow animate__animated animate__bounceInRight timeline-content mt-2"
-                  >
-                    <span>2025</span>
-                    <h3>Present Work</h3>
-                    <p>哲煜科技-ASP.NET Developer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 專案 -->
-      <section id="projects">
-        <div class="projects-container">
-          <h2 class="section-title text-center">
-            My <span>Projects</span>
-          </h2>
-          <div class="projects-grid">
-            <div class="project-card wow animate__animated animate__fadeInDown">
-              <img
-                alt="Project"
-                src="./assets/NuxtFronted.png"
-                class="project-image"
-              />
-              <h3>書法藝術家線上展覽</h3>
-              <span>[獨立接案]</span>
-              <p>
-                以 Nuxt.js 框架開發的響應式個人作品網站，展示書法藝術家的創作。
-                前後端分離架構（另以 ASP.NET Core Web API 開發），支援 SEO
-                與自適應裝置顯示。
-              </p>
-              <a
-                href="https://www.ruoliwrite.com/"
-                target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <div class="project-card wow animate__animated animate__bounceInLeft">
-              <img
-                alt="Project"
-                src="./assets/Write.png"
-                class="project-image"
-              />
-              <h3>書法展覽後台管理系統</h3>
-              <span>[獨立接案]</span>
-              <p>
-                本專案以 ASP.NET Core MVC
-                架構開發，目標是建立一套供書法家管理作品的後台系統。使用者登入後可上傳書法作品、設定公開狀態，並可查看留言紀錄與按讚數量，協助管理展出作品的互動回饋。系統具備圖片上傳與預覽、留言通知、資料表篩選排序等功能，搭配
-                Bootstrap 與 jQuery DataTables 提升使用者體驗。
-              </p>
-              <a
-                href="https://www.ruolibackend.com/"
-                target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <div class="project-card wow animate__animated animate__bounceInDown">
-              <img
-                alt="Project"
-                src="./assets/mygoparking.png"
-                class="project-image"
-              />
-              <h3>MyGoParking</h3>
-              <p>
-                停車場搜尋Web服務, 三層式架構, 前端以Vue為框架, 後端.Net Core
-                Web Api, 資料庫SQL Server. 提供預約車位服務,
-                讓臨時想去人擠人的地方時能先預約車位, 不怕想玩又找不到車位哦~
-              </p>
-              <a
-                href="#"
-                target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
 
-            <div class="project-card wow animate__animated animate__backInDown">
-              <img
-                alt="Project"
-                src="./assets/parklot.png"
-                class="project-image"
-              />
-              <h3>停車場管理系統</h3>
-              <p>
-                此專案是針對停車場後台管理的系統,
-                提供了即時查詢、資料編輯、刪除和新增等功能.
-              </p>
-              <a
-                href="https://github.com/GUOJIE526/MyGoParkingManagement"
-                target="_blank"
-                ><i class="bi bi-github"></i
-              ></a>
-            </div>
-            <div class="project-card wow animate__animated animate__fadeInRightBig">
-              <img
-                alt="Project"
-                src="./assets/PharmacyShop.png"
-                class="project-image"
-              />
-              <h3>線上藥局</h3>
-              <p>
-                運用C# ADO.Net WinForm及MS SQL製作的線上藥局商城,
-                具備了會員管理、商品管理、員工管理、訂單管理和系統管理.
-              </p>
-              <a
-                href="https://github.com/GUOJIE526/PharmacyShop2.0"
-                target="_blank"
-                ><i class="bi bi-github"></i
-              ></a>
-            </div>
-
-            <div class="project-card wow animate__animated animate__zoomInUp">
-              <img
-                alt="Project"
-                src="./assets/cat-search.jpg"
-                class="project-image"
-              />
-              <h3>搜索喵喵</h3>
-              <p>
-                Cat Search 是一個用於搜索貓咪品種並顯示其詳細信息的Web
-                APP。用戶可以選擇不同的貓咪品種並查看其詳細資料
-                ，包括圖片、品種名稱、原產地、壽命、體重、性格等。
-              </p>
-              <div class="project-links">
-                <a
-                  href="https://github.com/GUOJIE526/Cat-Search"
-                  target="_blank"
-                  ><i class="bi bi-github"></i
-                ></a>
-                <a
-                  href="https://guojie526.github.io/Cat-Search/"
-                  target="_blank"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
+    <main id="main">
+      <section class="hero wrap" id="top" data-section="top" aria-labelledby="hero-name">
+        <div class="board">
+          <span class="board__band" aria-hidden="true"></span>
+          <span class="badge badge--lg" aria-hidden="true">GJ</span>
+          <div class="board__id">
+            <h1 class="board__name" id="hero-name">洪國傑</h1>
+            <p class="board__en" lang="en">GuoJie</p>
+            <p class="board__role">ASP.NET / C# 後端工程師</p>
           </div>
+          <img
+            class="board__photo"
+            src="assets/PortfplioImg.jpg"
+            alt="洪國傑的大頭照"
+            width="1108"
+            height="1477"
+            fetchpriority="high"
+          />
+          <p class="board__summary">
+            專注 ASP.NET Core / C# 後端開發。從需求理解、資料設計與 API
+            實作，一路做到測試、部署與維護，並持續研究 AI 協作工具。
+          </p>
         </div>
-      </section>
-      <!-- 服務 -->
-      <section id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <h1 class="text-secondary">
-                My <span class="text-danger">Services</span>
-              </h1>
-              <span class="text-secondary">What I Offer</span>
-            </div>
-            <div class="col-12 wow animate__animated animate__zoomIn">
-              <div class="row p-0 mt-3 g-1 serv-row">
-                <div class="serv col-6 col-lg-3 p-2 text-center">
-                  <h4>Web Designer</h4>
-                  <i class="fa-brands fa-codepen"></i>
-                </div>
-                <div class="serv col-6 col-lg-3 p-2 text-center">
-                  <h4>Front-end Engineer</h4>
-                  <i class="fa-solid fa-laptop-code"></i>
-                </div>
-                <div class="serv col-6 col-lg-3 p-2 text-center">
-                  <h4>Back-end Engineer</h4>
-                  <i class="fa-solid fa-code"></i>
-                </div>
-                <div class="serv col-6 col-lg-3 p-2 text-center">
-                  <h4>Full-stack Engineer</h4>
-                  <i class="fa-solid fa-terminal"></i>
-                </div>
-              </div>
-            </div>
-            <!-- skill -->
-            <div class="col-12 text-center mt-3">
-              <h1 class="text-secondary">
-                My <span class="text-danger">Skills</span>
-              </h1>
-              <span class="text-secondary">My technical level</span>
-            </div>
-            <div class="col-12 mt-5">
-              <div class="row">
-                <div class="col-12 col-lg-6">
-                  <div class="row">
-                    <div class="col-12 text-center mt-3">
-                      <h4>Frontend Developer</h4>
-                    </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-6 text-center mt-3 p-2">
-                          <h5><i class="fa-solid fa-circle-check"></i> HTML</h5>
-                          <h5><i class="fa-solid fa-circle-check"></i> CSS</h5>
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> JavaScript
-                          </h5>
-                        </div>
-                        <div class="col-6 text-center mt-3 p-2">
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> Bootstraps
-                          </h5>
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> VUE.js
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                  <div class="row">
-                    <div class="col-12 text-center mt-3">
-                      <h4>Backend Developer</h4>
-                    </div>
-                    <div class="col-12 p-0">
-                      <div class="row">
-                        <div class="col-6 text-center mt-3 p-2">
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> ASP.Net
-                            Core MVC
-                          </h5>
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> Azure
-                          </h5>
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> MSSQL CRUD
-                          </h5>
-                        </div>
-                        <div class="col-6 text-center mt-3 p-2">
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> ADO.Net &
-                            .Net Framework Core
-                          </h5>
 
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> RESTful API
-                            & AJAX
-                          </h5>
-                          <h5>
-                            <i class="fa-solid fa-circle-check"></i> Github &
-                            Git
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <ol class="route" aria-label="職涯路線">
+          <li class="is-past" style="--i: 0">
+            <span class="route__dot" aria-hidden="true"></span>
+            <span class="route__code">GJ01</span>
+            <a class="route__name" href="#GJ01">日月光半導體</a>
+            <span class="route__meta">2015 · 設備維修保養</span>
+          </li>
+          <li class="is-past" style="--i: 1">
+            <span class="route__dot" aria-hidden="true"></span>
+            <span class="route__code">GJ02</span>
+            <a class="route__name" href="#GJ02">正修科技大學</a>
+            <span class="route__meta">2020 · 資訊工程學系</span>
+          </li>
+          <li class="is-past" style="--i: 2">
+            <span class="route__dot" aria-hidden="true"></span>
+            <span class="route__code">GJ03</span>
+            <a class="route__name" href="#GJ03">資展國際</a>
+            <span class="route__meta">2024 · 全端工程師養成班</span>
+          </li>
+          <li class="is-current" style="--i: 3" aria-current="step">
+            <span class="route__dot" aria-hidden="true"></span>
+            <span class="route__code">GJ04</span>
+            <a class="route__name" href="#GJ04">哲煜科技</a>
+            <span class="route__meta">2025/08 · ASP.NET 後端工程師</span>
+            <span class="route__tag">本站</span>
+            <svg class="route__plan" aria-hidden="true">
+              <line class="plan-h" x1="0" y1="50%" x2="100%" y2="50%" />
+              <line class="plan-v" x1="50%" y1="0" x2="50%" y2="100%" />
+            </svg>
+          </li>
+          <li class="is-next" style="--i: 4">
+            <span class="route__dot" aria-hidden="true"></span>
+            <span class="route__code">GJ05</span>
+            <span class="route__name">貴公司</span>
+            <span class="route__tag route__tag--next">下一站</span>
+            <div class="route__actions">
+              <a class="btn btn--primary" href="mailto:hungkaojay@gmail.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3.5 7 8.5 6 8.5-6" />
+                </svg>
+                寄信給我
+              </a>
+              <a class="btn btn--ghost" href="file/Resume.pdf" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 4v11" />
+                  <path d="m7 10 5 5 5-5" />
+                  <path d="M5 20h14" />
+                </svg>
+                下載履歷
+              </a>
             </div>
-          </div>
-        </div>
+          </li>
+        </ol>
       </section>
-      <!-- 聯絡我 -->
-      <section id="contact">
-        <div class="row">
-          <div
-            class="wow animate__animated animate__heartBeat col-12 text-center"
-          >
-            <h1>Contact <span class="text-danger">Me</span></h1>
-            <h4>Let's Team up!</h4>
-          </div>
-          <div class="col-12 text-center">
-            <ul class="mt-5 contact-ul">
-              <li class="fs-4">
-                <i class="fa-solid fa-envelope me-2 text-primary"></i
-                >hungkaojay@gmail.com
+
+      <div class="track wrap">
+        <section class="station" id="GJ04" data-section="GJ04" aria-labelledby="gj04-title">
+          <header class="station__head">
+            <span class="stop stop--current" aria-hidden="true"></span>
+            <h2 class="station__title" id="gj04-title">
+              <span class="code-badge">GJ04</span>哲煜科技
+            </h2>
+            <p class="station__sub">
+              本站 <span lang="en">Current Station</span> · 哲煜科技股份有限公司 · ASP.NET
+              後端工程師 · <time datetime="2025-08">2025/08</time> – 現在
+            </p>
+          </header>
+          <div class="current">
+            <p class="lead">多個不同類型的後端專案：從需求、資料、API、測試，到部署與維護。</p>
+            <ul class="notices">
+              <li>
+                負責 ASP.NET Core / .NET 後端流程架構與開發，累積需求理解、資料設計、API
+                實作及交付維護經驗。
               </li>
-              <li class="fs-4 mt-3">
-                <i class="fa-solid fa-phone-volume me-2 text-primary"></i
-                >+886956380786
+              <li>
+                面對不同業務流程與既有 codebase，先釐清資料關係、模組邊界與錯誤情境，再控制修改範圍並補上必要測試。
               </li>
+              <li>協助團隊導入 SDD、AI 輔助工具與知識圖譜索引，加速程式碼理解與協作開發效率。</li>
             </ul>
-            <!-- icons -->
-            <div class="social-icons fs-3 m-5">
-              <a
-                href="https://github.com/GUOJIE526"
-                class="ms-3 text-danger"
-                target="_blank"
-                ><i class="bi bi-github"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/guojie.hong/"
-                class="ms-3 text-danger"
-                target="_blank"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <a
-                href="https://www.facebook.com/kuojay.hung"
-                class="ms-3 text-danger"
-                target="_blank"
-                ><i class="bi bi-meta"></i
-              ></a>
-            </div>
+          </div>
+        </section>
+
+        <section class="station" id="flow" data-section="flow" aria-labelledby="flow-title">
+          <header class="station__head">
+            <h2 class="station__title" id="flow-title">
+              <span class="code-badge code-badge--teal">V</span>驗證流程線
+            </h2>
+            <p class="station__sub">
+              轉乘 · <span lang="en">Transfer to Verification Line</span>
+            </p>
+          </header>
+          <figure class="creed">
+            <blockquote>
+              <p>先理解流程、資料狀態與錯誤邊界，再進行設計與實作；重視資料一致、流程可靠、錯誤可追蹤與部署可控。</p>
+            </blockquote>
+            <figcaption>工作信條</figcaption>
+          </figure>
+          <div class="vline-wrap">
+            <span class="junction" aria-hidden="true"></span>
+            <ol class="vline" aria-label="驗證流程線的五站">
+              <li>
+                <span class="vline__dot" aria-hidden="true"></span>
+                <h3><span class="code-badge code-badge--teal">V01</span>需求理解</h3>
+                <p>先釐清業務流程、資料關係、模組邊界與錯誤情境。</p>
+              </li>
+              <li>
+                <span class="vline__dot" aria-hidden="true"></span>
+                <h3><span class="code-badge code-badge--teal">V02</span>資料設計</h3>
+                <p>分層架構與 Repository / Service；重視資料一致，處理匯入匯出。</p>
+              </li>
+              <li>
+                <span class="vline__dot" aria-hidden="true"></span>
+                <h3><span class="code-badge code-badge--teal">V03</span>API 實作</h3>
+                <p>ASP.NET Core Web API 與 RESTful API；控制修改範圍，保持模組化。</p>
+              </li>
+              <li>
+                <span class="vline__dot" aria-hidden="true"></span>
+                <h3><span class="code-badge code-badge--teal">V04</span>測試</h3>
+                <p>以 TDD 驗證行為；修改既有 codebase 時補上必要測試。</p>
+              </li>
+              <li>
+                <span class="vline__dot" aria-hidden="true"></span>
+                <h3><span class="code-badge code-badge--teal">V05</span>部署與維護</h3>
+                <p>排程、推播與補償排程；部署可控，錯誤可追蹤。</p>
+              </li>
+            </ol>
+          </div>
+          <p class="flow-note">
+            用 SDD 串起整條線：先寫規格再開發，讓需求、文件與程式碼對得上。我也持續研發 AI Workflow
+            工具，用 agent、skill 與知識圖譜降低理解程式碼的成本。
+          </p>
+        </section>
+
+        <section class="station" id="network" data-section="network" aria-labelledby="network-title">
+          <header class="station__head">
+            <h2 class="station__title" id="network-title">能力路網</h2>
+            <p class="station__sub">四條路線，每一站都是實際用過的技術。</p>
+          </header>
+          <div class="network">
+            <section class="netline" style="--c: var(--amber); --c-ink: var(--sign)" aria-labelledby="line-b">
+              <h3 id="line-b"><span class="line-chip">B</span>後端與資料線</h3>
+              <ol>
+                <li>C#</li>
+                <li>ASP.NET Core MVC / Web API</li>
+                <li>RESTful API</li>
+                <li>EF Core · LINQ</li>
+                <li>Dapper</li>
+                <li>Repository / Service 分層</li>
+                <li>SQL Server · MySQL</li>
+                <li>EF Core Migration</li>
+                <li>資料匯入匯出與一致性</li>
+              </ol>
+            </section>
+            <section class="netline" style="--c: var(--blue)" aria-labelledby="line-s">
+              <h3 id="line-s"><span class="line-chip">S</span>排程與前端協作線</h3>
+              <ol>
+                <li>Hangfire</li>
+                <li>Firebase Admin</li>
+                <li>推播與補償排程</li>
+                <li>時區轉換</li>
+                <li>Vue.js</li>
+                <li>Angular</li>
+                <li>jQuery · Bootstrap</li>
+              </ol>
+            </section>
+            <section class="netline" style="--c: var(--teal)" aria-labelledby="line-a">
+              <h3 id="line-a"><span class="line-chip">A</span>AI Workflow 線</h3>
+              <ol>
+                <li class="is-transfer">TDD<span class="visually-hidden">（轉乘站）</span></li>
+                <li>模組化設計</li>
+                <li class="is-transfer">SDD<span class="visually-hidden">（轉乘站）</span></li>
+                <li>agent 規範</li>
+                <li>skill</li>
+                <li>知識圖譜索引</li>
+                <li>MCP</li>
+              </ol>
+            </section>
+            <section class="netline" style="--c: var(--brown)" aria-labelledby="line-d">
+              <h3 id="line-d"><span class="line-chip">D</span>部署與整合支線</h3>
+              <ol>
+                <li>IIS · SSL 憑證</li>
+                <li>Azure App Service</li>
+                <li>Azure SQL Database</li>
+                <li>GitHub Actions CI/CD</li>
+                <li>SignalR 即時推播</li>
+                <li>LINE Messaging API</li>
+                <li>Git / GitHub</li>
+              </ol>
+            </section>
+          </div>
+          <p class="legend">
+            <span class="legend__ring" aria-hidden="true"></span>轉乘站：可轉乘上方的驗證流程線
+          </p>
+        </section>
+
+        <section class="station" id="past" data-section="past" aria-labelledby="past-title">
+          <header class="station__head">
+            <h2 class="station__title" id="past-title">已過站</h2>
+            <p class="station__sub">由近到遠 · <span lang="en">Previous Stations</span></p>
+          </header>
+          <div class="past-grid">
+            <ol class="past">
+              <li class="past__stop" id="GJ03">
+                <span class="ghost" aria-hidden="true"></span>
+                <h3><span class="code-badge code-badge--past">GJ03</span>資展國際（原資策會）</h3>
+                <p class="past__meta">
+                  全端工程師養成班 · <time datetime="2024-06">2024/06</time> –
+                  <time datetime="2024-11">2024/11</time>
+                </p>
+                <p class="past__note">582 小時培訓；擔任小組專案的專案總監。</p>
+              </li>
+              <li class="past__stop" id="GJ02">
+                <span class="ghost" aria-hidden="true"></span>
+                <h3><span class="code-badge code-badge--past">GJ02</span>正修科技大學</h3>
+                <p class="past__meta">
+                  資訊工程學系 · <time datetime="2020-09">2020/09</time> –
+                  <time datetime="2024-06">2024/06</time>
+                </p>
+              </li>
+              <li class="past__stop" id="GJ01">
+                <span class="ghost" aria-hidden="true"></span>
+                <h3><span class="code-badge code-badge--past">GJ01</span>日月光半導體</h3>
+                <p class="past__meta">
+                  設備維修保養技術員 · <time datetime="2015-06">2015/06</time> –
+                  <time datetime="2024-10">2024/10</time>
+                </p>
+                <p class="past__note">
+                  建立問題定位、紀錄追蹤與穩定性驗證的工作習慣，延伸到後端開發中的流程理解、錯誤邊界與驗證思維。
+                </p>
+              </li>
+            </ol>
+            <aside class="info" aria-labelledby="info-title">
+              <h3 id="info-title">站內資訊</h3>
+              <dl>
+                <dt>語言</dt>
+                <dd>台語　精通</dd>
+                <dd>英文　聽說讀寫略懂</dd>
+                <dt>聯絡</dt>
+                <dd><a href="mailto:hungkaojay@gmail.com">hungkaojay@gmail.com</a></dd>
+                <dd>
+                  <a href="https://github.com/GUOJIE-HONG" target="_blank" rel="noopener"
+                    >github.com/GUOJIE-HONG</a
+                  >
+                </dd>
+              </dl>
+            </aside>
+          </div>
+        </section>
+        <svg class="track__plan" aria-hidden="true">
+          <line x1="50%" y1="0" x2="50%" y2="100%" />
+        </svg>
+      </div>
+
+      <section class="next wrap" id="GJ05" data-section="GJ05" aria-labelledby="next-title">
+        <div class="board board--next">
+          <span class="board__band" aria-hidden="true"></span>
+          <span class="stop stop--next" aria-hidden="true"></span>
+          <h2 class="next__title" id="next-title">
+            <span class="code-badge code-badge--amber">GJ05</span>下一站：貴公司
+          </h2>
+          <p class="next__en" lang="en">Next Station: Your Company</p>
+          <p class="next__body">
+            有 ASP.NET Core / C# 後端的職缺或合作，歡迎來信；也接後端與後台系統的開發案。
+          </p>
+          <a class="next__mail" href="mailto:hungkaojay@gmail.com">hungkaojay@gmail.com</a>
+          <div class="next__actions">
+            <a class="btn btn--primary" href="mailto:hungkaojay@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3.5 7 8.5 6 8.5-6" />
+              </svg>
+              寄信給我
+            </a>
+            <a class="btn btn--ghost btn--on-sign" href="file/Resume.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4v11" />
+                <path d="m7 10 5 5 5-5" />
+                <path d="M5 20h14" />
+              </svg>
+              下載履歷
+            </a>
+            <a
+              class="btn btn--ghost btn--on-sign"
+              href="https://github.com/GUOJIE-HONG"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon-fill" viewBox="0 0 16 16" aria-hidden="true">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                />
+              </svg>
+              GitHub
+            </a>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container-fluid bg-secondary">
-        <div class="row text-center text-white">
-          <div class="col-12">
-            Developed by GuoJie &copy; <span class="dateTime"></span>
-          </div>
-        </div>
-      </div>
+
+    <footer class="foot wrap">
+      <p>© <span data-year>2026</span> 洪國傑 <span lang="en">GuoJie</span></p>
+      <p><a href="#top">回到站名牌</a></p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      new WOW().init();
-
-      var typed = new Typed(".text", {
-        strings: [
-          "FullStack Engineer",
-          "Frontend Designer",
-          "BackEnd Development",
-        ],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 1000,
-        loop: true,
-      });
-
-      //footer year
-      const year = new Date().getFullYear();
-      document.querySelector(".dateTime").textContent = year;
-    </script>
   </body>
 </html>

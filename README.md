@@ -1,23 +1,23 @@
-# 個人作品集網站 (Personal Portfolio Website)
+# 洪國傑 · 個人介紹頁 (Personal Introduction Page)
 
-這是一個使用 HTML, CSS, 和 JavaScript 建立的個人化前端作品集專案，旨在展示我的技能、專案經驗以及個人簡介。
+ASP.NET / C# 後端工程師洪國傑（GuoJie）的單頁個人介紹網站。版面以捷運路線圖為主題：走過的站是經歷，本站是現職，下一站是聯絡方式。
 
-**[Click Me](https://guojie526.github.io/PortfolioWeb/)** to view the live demo.
+**[Click Me](https://guojie-hong.github.io/PortfolioWeb/)** to view the live page.
 
-## ✨ 功能亮點 (Features)
+## ✨ 內容 (Sections)
 
-- **專案展示**: 精心挑選的專案，涵蓋了不同的技術領域。
-- **技能清單**: 詳細介紹我所掌握的技術棧。
-- **關於我**: 我的專業背景與簡歷。
-- **響應式設計**: 在不同尺寸的設備上皆有良好的瀏覽體驗。
+- **站名牌**：姓名、職稱、摘要與職涯路線。
+- **本站**：現職工作內容。
+- **驗證流程線**：從需求理解、資料設計、API 實作到測試、部署與維護的工作方式。
+- **能力路網**：後端與資料、排程與前端協作、AI Workflow、部署與整合四條技術路線。
+- **已過站**：學經歷。
+- **下一站**：Email、履歷下載與 GitHub。
 
-## 🛠️ 技術棧 (Tech Stack)
+## 🛠️ 製作方式 (Built With)
 
-作品集展示的專案涵蓋了以下技術：
-
-- **前端**: Vue.js, Nuxt.js, jQuery (AJAX), HTML, CSS
-- **後端**: ASP.NET Web API, C#
-- **資料庫/ORM**: Entity Framework Core
+- 純 HTML、CSS、JavaScript，沒有框架與建置步驟。
+- 字體：Noto Sans TC、Overpass（Google Fonts）。
+- 設計紀錄：`PRODUCT.md`（產品事實）、`DESIGN.md`（設計規範）。
 
 ## 🚀 如何預覽 (How to View)
 

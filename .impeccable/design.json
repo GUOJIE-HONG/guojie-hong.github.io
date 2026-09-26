@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-26T16:14:59.624Z",
+  "title": "Design System: 洪國傑 · 職涯路線圖",
+  "extensions": {
+    "colorMeta": {
+      "amber": {
+        "role": "primary",
+        "displayName": "經歷琥珀 Career Amber",
+        "canonical": "oklch(77.8% 0.160 74.3)",
+        "tonalRamp": [
+          "#130900",
+          "#352000",
+          "#5b3b01",
+          "#835702",
+          "#af7504",
+          "#dc9400",
+          "#ffbb56",
+          "#ffebd2"
+        ]
+      },
+      "amber-hover": {
+        "role": "primary",
+        "displayName": "亮琥珀 Lit Amber",
+        "canonical": "oklch(83.3% 0.155 77.8)",
+        "tonalRamp": [
+          "#130900",
+          "#332100",
+          "#593c01",
+          "#815801",
+          "#ab7700",
+          "#d89705",
+          "#ffbc45",
+          "#ffeccf"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "驗證深青 Verification Teal",
+        "canonical": "oklch(52.8% 0.084 197.0)",
+        "tonalRamp": [
+          "#000e0f",
+          "#012b2c",
+          "#004c4e",
+          "#036f72",
+          "#389294",
+          "#5eb5b7",
+          "#83dbdc",
+          "#b6feff"
+        ]
+      },
+      "blue": {
+        "role": "tertiary",
+        "displayName": "排程線藍 Schedule Blue",
+        "canonical": "oklch(51.4% 0.135 257.4)",
+        "tonalRamp": [
+          "#000a22",
+          "#002252",
+          "#013e88",
+          "#2960ac",
+          "#4a82d2",
+          "#6da6f8",
+          "#a8ccfe",
+          "#e5effe"
+        ]
+      },
+      "brown": {
+        "role": "tertiary",
+        "displayName": "部署支線褐 Branch Brown",
+        "canonical": "oklch(55.2% 0.059 59.6)",
+        "tonalRamp": [
+          "#160700",
+          "#391d02",
+          "#593a20",
+          "#7a593f",
+          "#9d7a5f",
+          "#c19d80",
+          "#e7c1a4",
+          "#ffeadb"
+        ]
+      },
+      "platform": {
+        "role": "neutral",
+        "displayName": "月台白 Platform White",
+        "canonical": "oklch(96.5% 0.005 117.9)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252522",
+          "#42423f",
+          "#61625e",
+          "#82837f",
+          "#a4a5a2",
+          "#c9cac6",
+          "#eeefeb"
+        ]
+      },
+      "platform-deep": {
+        "role": "neutral",
+        "displayName": "月台深 Platform Deep",
+        "canonical": "oklch(92.8% 0.008 121.6)",
+        "tonalRamp": [
+          "#0b0c08",
+          "#242621",
+          "#41433e",
+          "#60625d",
+          "#81837e",
+          "#a4a6a0",
+          "#c8cac4",
+          "#edefe9"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "月台分隔線 Platform Rule",
+        "canonical": "oklch(85.8% 0.012 133.4)",
+        "tonalRamp": [
+          "#090c07",
+          "#232620",
+          "#40443d",
+          "#5e635c",
+          "#7f847d",
+          "#a2a79f",
+          "#c6cbc3",
+          "#ebf0e8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "墨 Ink",
+        "canonical": "oklch(24.6% 0.021 242.8)",
+        "tonalRamp": [
+          "#040c13",
+          "#1c262e",
+          "#39444d",
+          "#57636c",
+          "#78848e",
+          "#9aa7b1",
+          "#becbd6",
+          "#e3f1fc"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "淡墨 Ink Soft",
+        "canonical": "oklch(43.1% 0.022 238.3)",
+        "tonalRamp": [
+          "#030c13",
+          "#1b272f",
+          "#37444d",
+          "#56636d",
+          "#76858e",
+          "#99a7b1",
+          "#bdccd6",
+          "#e1f1fc"
+        ]
+      },
+      "sign": {
+        "role": "neutral",
+        "displayName": "站牌藍灰 Sign Slate",
+        "canonical": "oklch(26.6% 0.024 241.2)",
+        "tonalRamp": [
+          "#030c14",
+          "#1b2730",
+          "#37444e",
+          "#56636e",
+          "#76848f",
+          "#98a7b3",
+          "#bcccd8",
+          "#e1f1fd"
+        ]
+      },
+      "sign-ink": {
+        "role": "neutral",
+        "displayName": "站牌字白 Sign Letter",
+        "canonical": "oklch(96.5% 0.005 117.9)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252522",
+          "#42423f",
+          "#61625e",
+          "#82837f",
+          "#a4a5a2",
+          "#c9cac6",
+          "#eeefeb"
+        ]
+      },
+      "sign-soft": {
+        "role": "neutral",
+        "displayName": "站牌淡字 Sign Soft",
+        "canonical": "oklch(78.4% 0.018 234.6)",
+        "tonalRamp": [
+          "#040c12",
+          "#1c272d",
+          "#39444b",
+          "#58636a",
+          "#78848c",
+          "#9aa7af",
+          "#becbd4",
+          "#e3f1f9"
+        ]
+      },
+      "walked": {
+        "role": "neutral",
+        "displayName": "已過站灰 Walked Grey",
+        "canonical": "oklch(75.7% 0.014 159.8)",
+        "tonalRamp": [
+          "#060d09",
+          "#1f2723",
+          "#3c443f",
+          "#5b645e",
+          "#7b857f",
+          "#9ea8a2",
+          "#c2ccc6",
+          "#e7f2eb"
+        ]
+      },
+      "line-ink": {
+        "role": "neutral",
+        "displayName": "路線字白 Line White",
+        "canonical": "oklch(100.0% 0.000 0)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "站名牌上的姓名，只用一次。≤719px 收為 clamp(2.75rem, 1.6rem + 6vw, 3.5rem)。"
+      },
+      "display-next": {
+        "displayName": "Display Next",
+        "purpose": "GJ05「下一站：貴公司」看板的站名。"
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "脊線上每一站的標題；text-wrap: balance。"
+      },
+      "title-lg": {
+        "displayName": "Title Large",
+        "purpose": "已過站的站名。"
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "路線條與驗證流程線上的站名。"
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "能力路網的線名、站內資訊面板標題。"
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "本站的一句話導言（最寬 17em）；工作信條引文同角色、上限大一階。"
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "一般內文，行寬 32–40em，line-break: strict；≤719px 改為 1rem。"
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "站點說明、時間、能力站名、圖例；時間一律 tabular-nums。"
+      },
+      "sign-en": {
+        "displayName": "Sign English",
+        "purpose": "看板上的英文站名，全大寫，顏色 sign-soft；GJ05 看板小一階、字距 0.14em。"
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "站號徽章；路線條上的小站號為 0.8125rem、字距 0.08em。"
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "所有按鈕。"
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "迷你路線的站名；目前站改為 700。"
+      }
+    },
+    "shadows": [
+      {
+        "name": "route-menu-overlay",
+        "value": "0 18px 40px -16px rgb(27 39 48 / 0.55)",
+        "purpose": "只給 ≤859px 從導覽列掉下來的路線選單。其他元素一律不加陰影。"
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "全站唯一的曲線（CSS token --ease-out），所有轉換與動畫都用它。"
+      },
+      {
+        "name": "state-change",
+        "value": "0.2s var(--ease-out)",
+        "purpose": "按鈕、連結、迷你路線站點的顏色與位移轉換。"
+      },
+      {
+        "name": "route-draw",
+        "value": "0.42s var(--ease-out); stagger 0.36s per stop via --i",
+        "purpose": "載入時路線條逐段以 scaleX 畫出（≤719px 改 scaleY）；只在 prefers-reduced-motion: no-preference 且 JS 加上執行狀態時跑一次，完成狀態是預設。"
+      },
+      {
+        "name": "stop-pop",
+        "value": "0.4s var(--ease-out)",
+        "purpose": "路線畫到站點時，站點從 scale(0) 放大。"
+      },
+      {
+        "name": "plan-draw",
+        "value": "0.42s var(--ease-out) 1.08s",
+        "purpose": "本站到下一站的虛線段最後畫出。"
+      },
+      {
+        "name": "next-lamp",
+        "value": "0.56s steps(1, end) 1.9s, 3 iterations, opacity 1 → 0.18",
+        "purpose": "「下一站」標籤閃三下後常亮，像車廂到站燈號。"
+      },
+      {
+        "name": "train-slide",
+        "value": "transform 0.55s var(--ease-out)",
+        "purpose": "迷你路線上的列車標記滑到目前段落的站點；減少動態時取消轉換。"
+      },
+      {
+        "name": "menu-chevron",
+        "value": "transform 0.25s var(--ease-out)",
+        "purpose": "≤859px 路線切換鈕展開時箭頭轉 180°。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "lg-down",
+        "value": "1023px",
+        "purpose": "站名牌收邊距、大圓徽 96px；本站段與已過站單欄；能力路網兩欄。"
+      },
+      {
+        "name": "nav-collapse",
+        "value": "859px",
+        "purpose": "迷你路線收成切換鈕與下拉選單，列車標記隱藏。"
+      },
+      {
+        "name": "sm-down",
+        "value": "719px",
+        "purpose": "track-pad 48px、spine-x 6px、spur-x 30px、line-w 10px；路線轉垂直；站名牌改為姓名＋88px 大頭照；能力路網單欄。"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "琥珀實心按鈕，只給寄信這個最重要的動作；永遠和下載履歷成對。",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m3.5 7 8.5 6 8.5-6\"/></svg>寄信給我</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border:2px solid transparent;border-radius:6px;font-family:var(--font-zh);font-size:1rem;font-weight:700;line-height:1.2;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .2s var(--ease-out),border-color .2s var(--ease-out),color .2s var(--ease-out),transform .2s var(--ease-out)} .ds-btn-primary svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round} .ds-btn-primary:active{transform:translateY(1px)} .ds-btn-primary{background:var(--amber);color:var(--sign)} .ds-btn-primary:hover{background:var(--amber-hover)} .ds-btn-primary:focus-visible{outline:3px solid var(--teal);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button (Platform)",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "月台上的框線按鈕：2px 墨色框，hover 整顆填墨色。",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4v11\"/><path d=\"m7 10 5 5 5-5\"/><path d=\"M5 20h14\"/></svg>下載履歷</a>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border:2px solid transparent;border-radius:6px;font-family:var(--font-zh);font-size:1rem;font-weight:700;line-height:1.2;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .2s var(--ease-out),border-color .2s var(--ease-out),color .2s var(--ease-out),transform .2s var(--ease-out)} .ds-btn-ghost svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round} .ds-btn-ghost:active{transform:translateY(1px)} .ds-btn-ghost{background:transparent;border-color:var(--ink);color:var(--ink)} .ds-btn-ghost:hover{background:var(--ink);color:var(--platform)} .ds-btn-ghost:focus-visible{outline:3px solid var(--teal);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button (On Sign)",
+      "kind": "button",
+      "refersTo": "button-on-sign",
+      "description": "深色站名牌上的框線按鈕：sign-soft 框，hover 填站牌字白；焦點框改琥珀。",
+      "html": "<div class=\"ds-on-sign-demo\"><a class=\"ds-btn-on-sign\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4v11\"/><path d=\"m7 10 5 5 5-5\"/><path d=\"M5 20h14\"/></svg>下載履歷</a></div>",
+      "css": ".ds-on-sign-demo{display:inline-block;padding:24px;border-radius:10px;background:var(--sign)} .ds-btn-on-sign{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border:2px solid transparent;border-radius:6px;font-family:var(--font-zh);font-size:1rem;font-weight:700;line-height:1.2;text-decoration:none;white-space:nowrap;cursor:pointer;transition:background-color .2s var(--ease-out),border-color .2s var(--ease-out),color .2s var(--ease-out),transform .2s var(--ease-out)} .ds-btn-on-sign svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round} .ds-btn-on-sign:active{transform:translateY(1px)} .ds-btn-on-sign{background:transparent;border-color:var(--sign-soft);color:var(--sign-ink)} .ds-btn-on-sign:hover{border-color:var(--sign-ink);background:var(--sign-ink);color:var(--sign)} .ds-btn-on-sign:focus-visible{outline:3px solid var(--amber);outline-offset:3px}"
+    },
+    {
+      "name": "Station Name Board",
+      "kind": "card",
+      "refersTo": "name-board",
+      "description": "深色站名牌：14px 琥珀頂帶、GJ 大圓徽、900 中文站名、Overpass 大寫英文、琥珀線名膠囊。只給姓名看板與 GJ05 看板。",
+      "html": "<div class=\"ds-board\"><span class=\"ds-board-band\" aria-hidden=\"true\"></span><span class=\"ds-board-roundel\" aria-hidden=\"true\">GJ</span><div><p class=\"ds-board-name\">洪國傑</p><p class=\"ds-board-en\" lang=\"en\">GuoJie</p><p class=\"ds-board-role\">ASP.NET / C# 後端工程師</p></div><p class=\"ds-board-summary\">專注 ASP.NET Core / C# 後端開發。從需求理解、資料設計與 API 實作，一路做到測試、部署與維護。</p></div>",
+      "css": ".ds-board{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;column-gap:40px;row-gap:28px;padding:60px 48px 48px;border-radius:var(--radius-sign);background:var(--sign);color:var(--sign-ink);font-family:var(--font-zh)} .ds-board-band{position:absolute;inset:0 0 auto;height:14px;border-radius:var(--radius-sign) var(--radius-sign) 0 0;background:var(--amber)} .ds-board-roundel{display:inline-grid;place-items:center;width:128px;height:128px;padding-top:6px;border:10px solid var(--amber);border-radius:50%;background:var(--sign);color:var(--sign-ink);font-family:var(--font-sign);font-size:2.75rem;font-weight:800;line-height:1;letter-spacing:.02em;box-sizing:border-box} .ds-board-name{margin:0;font-size:clamp(3.25rem,1.6rem + 5.2vw,6rem);font-weight:900;line-height:1.05;letter-spacing:.04em} .ds-board-en{margin:10px 0 0;color:var(--sign-soft);font-family:var(--font-sign);font-size:clamp(1.125rem,.9rem + .8vw,1.5rem);font-weight:700;line-height:1.2;letter-spacing:.16em;text-transform:uppercase} .ds-board-role{display:inline-block;margin:22px 0 0;padding:6px 16px;border-radius:999px;background:var(--amber);color:var(--sign);font-size:1.0625rem;font-weight:700;line-height:1.5} .ds-board-summary{grid-column:2;max-width:34em;margin:0;color:var(--sign-soft);font-size:1.125rem;line-height:1.85}"
+    },
+    {
+      "name": "Route Strip & Stops",
+      "kind": "custom",
+      "refersTo": "stop-current",
+      "description": "第一屏路線條：琥珀實線、走過實心／本站雙圈／下一站虛線空心，本站到下一站用 18 / 12 虛線；「下一站」標籤閃三下後常亮。",
+      "html": "<ol class=\"ds-route\" aria-label=\"職涯路線\"><li><span class=\"ds-route-dot\" aria-hidden=\"true\"></span><span class=\"ds-route-code\">GJ02</span><span class=\"ds-route-name\">正修科技大學</span><span class=\"ds-route-meta\">2020 · 資訊工程學系</span></li><li><span class=\"ds-route-dot\" aria-hidden=\"true\"></span><span class=\"ds-route-code\">GJ03</span><span class=\"ds-route-name\">資展國際</span><span class=\"ds-route-meta\">2024 · 全端工程師養成班</span></li><li class=\"ds-route-current\" aria-current=\"step\"><span class=\"ds-route-dot\" aria-hidden=\"true\"></span><span class=\"ds-route-code\">GJ04</span><span class=\"ds-route-name\">哲煜科技</span><span class=\"ds-route-meta\">2025/08 · ASP.NET 後端工程師</span><span class=\"ds-route-tag\">本站</span><svg class=\"ds-route-plan\" aria-hidden=\"true\"><line x1=\"0\" y1=\"50%\" x2=\"100%\" y2=\"50%\"/></svg></li><li class=\"ds-route-next\"><span class=\"ds-route-dot\" aria-hidden=\"true\"></span><span class=\"ds-route-code\">GJ05</span><span class=\"ds-route-name\">貴公司</span><span class=\"ds-route-tag ds-route-tag-next\">下一站</span></li></ol>",
+      "css": ".ds-route{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;padding:0;list-style:none;background:var(--platform);color:var(--ink);font-family:var(--font-zh)} .ds-route>li{position:relative;padding:62px 10px 0;text-align:center} .ds-route>li::before,.ds-route>li::after{content:\"\";position:absolute;top:22px;height:var(--line-w);background:var(--amber)} .ds-route>li::before{left:0;right:50%} .ds-route>li::after{left:50%;right:0} .ds-route>li:first-child::before,.ds-route>li:last-child::after,.ds-route>.ds-route-current::after,.ds-route>.ds-route-next::before{display:none} .ds-route-plan{position:absolute;top:22px;left:50%;width:100%;height:var(--line-w);overflow:visible;pointer-events:none} .ds-route-plan line{stroke:var(--amber);stroke-width:var(--line-w);stroke-dasharray:18 12} .ds-route-dot{position:absolute;z-index:1;top:16px;left:50%;width:24px;height:24px;margin-left:-12px;border:5px solid var(--platform);border-radius:50%;background:var(--sign);box-sizing:border-box} .ds-route-current>.ds-route-dot{top:13px;width:30px;height:30px;margin-left:-15px;border:7px solid var(--sign);background:var(--platform);outline:3px solid var(--sign);outline-offset:3px} .ds-route-next>.ds-route-dot{top:15px;width:26px;height:26px;margin-left:-13px;border:4px dashed var(--sign);background:var(--platform)} .ds-route-code{display:inline-block;padding:3px 8px 1px;border-radius:4px;background:var(--sign);color:var(--sign-ink);font-family:var(--font-sign);font-size:.8125rem;font-weight:800;letter-spacing:.08em;line-height:1.4} .ds-route-name{display:block;margin-top:10px;font-size:1.25rem;font-weight:900;line-height:1.35} .ds-route-meta{display:block;margin-top:2px;color:var(--ink-soft);font-size:.9375rem;line-height:1.5;font-variant-numeric:tabular-nums} .ds-route-tag{display:inline-block;margin-top:10px;padding:2px 12px;border-radius:999px;background:var(--sign);color:var(--amber);font-size:.875rem;font-weight:700;line-height:1.6} .ds-route-tag-next{margin-top:4px;background:var(--amber);color:var(--sign)} @media (prefers-reduced-motion:no-preference){.ds-route-tag-next{animation:ds-lamp .56s steps(1,end) 1.9s 3}} @keyframes ds-lamp{0%{opacity:1}50%{opacity:.18}}"
+    },
+    {
+      "name": "Station Code Badges",
+      "kind": "chip",
+      "refersTo": "code-badge",
+      "description": "站號徽章放在站名同一行最前面：sign（經歷線）、teal（驗證線）、ink-soft（已過站）、amber（GJ05，只在看板上）。",
+      "html": "<div class=\"ds-codes\"><h2 class=\"ds-station-title\"><span class=\"ds-code\">GJ04</span>哲煜科技</h2><p class=\"ds-code-row\"><span class=\"ds-code\">GJ04</span><span class=\"ds-code ds-code-teal\">V01</span><span class=\"ds-code ds-code-past\">GJ03</span><span class=\"ds-code-sign\"><span class=\"ds-code ds-code-amber\">GJ05</span></span></p></div>",
+      "css": ".ds-codes{background:var(--platform);color:var(--ink);font-family:var(--font-zh)} .ds-station-title{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:0;font-size:clamp(2rem,1.2rem + 2.6vw,3.25rem);font-weight:900;line-height:1.24;letter-spacing:.03em} .ds-code-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:24px 0 0} .ds-code{display:inline-block;flex:none;padding:.42em .6em .3em;border-radius:6px;background:var(--sign);color:var(--sign-ink);font-family:var(--font-sign);font-size:.875rem;font-weight:800;line-height:1;letter-spacing:.06em;font-variant-numeric:tabular-nums} .ds-code-teal{background:var(--teal);color:#fff} .ds-code-past{background:var(--ink-soft);color:var(--platform)} .ds-code-sign{display:inline-block;padding:10px 14px;border-radius:6px;background:var(--sign)} .ds-code-amber{background:var(--amber);color:var(--sign)}"
+    },
+    {
+      "name": "Minimap Navigation",
+      "kind": "nav",
+      "refersTo": "minimap-train",
+      "description": "導覽列右側的六站迷你路線：3px 墨色線、空心站點，目前站填琥珀，琥珀車廂標記滑到目前段落。",
+      "html": "<nav class=\"ds-minimap\" aria-label=\"頁面路線\"><ol class=\"ds-minimap-list\"><li><a href=\"#\" aria-current=\"true\"><span class=\"ds-minimap-dot\" aria-hidden=\"true\"></span>站名牌</a></li><li><a href=\"#\"><span class=\"ds-minimap-dot\" aria-hidden=\"true\"></span>本站</a></li><li><a href=\"#\"><span class=\"ds-minimap-dot\" aria-hidden=\"true\"></span>驗證流程</a></li><li><a href=\"#\"><span class=\"ds-minimap-dot\" aria-hidden=\"true\"></span>能力路網</a></li><li><a href=\"#\"><span class=\"ds-minimap-dot\" aria-hidden=\"true\"></span>已過站</a></li><li><a href=\"#\"><span class=\"ds-minimap-dot\" aria-hidden=\"true\"></span>下一站</a></li></ol><span class=\"ds-minimap-train\" aria-hidden=\"true\"></span></nav>",
+      "css": ".ds-minimap{position:relative;display:inline-block;background:var(--platform);font-family:var(--font-zh)} .ds-minimap-list{position:relative;display:flex;margin:0;padding:0;list-style:none} .ds-minimap-list::before{content:\"\";position:absolute;top:12.5px;left:30px;right:30px;height:3px;background:var(--ink)} .ds-minimap-list a{position:relative;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:60px;padding:6px 10px 2px;color:var(--ink-soft);font-size:.8125rem;font-weight:500;line-height:1.3;text-decoration:none;white-space:nowrap;transition:color .2s var(--ease-out)} .ds-minimap-dot{position:relative;z-index:1;width:14px;height:14px;border:3px solid var(--ink);border-radius:50%;background:var(--platform);box-sizing:border-box;transition:background-color .2s var(--ease-out),border-color .2s var(--ease-out)} .ds-minimap-list a:hover{color:var(--ink)} .ds-minimap-list a:hover .ds-minimap-dot{border-color:var(--teal)} .ds-minimap-list a:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px} .ds-minimap-list a[aria-current=\"true\"]{color:var(--ink);font-weight:700} .ds-minimap-list a[aria-current=\"true\"] .ds-minimap-dot{background:var(--amber)} .ds-minimap-train{position:absolute;top:4px;left:0;z-index:2;width:30px;height:18px;border:3px solid var(--sign);border-radius:6px;background:var(--amber);box-sizing:border-box;transform:translateX(var(--train-x,15px));transition:transform .55s var(--ease-out);pointer-events:none} @media (prefers-reduced-motion:reduce){.ds-minimap-train{transition:none}}"
+    },
+    {
+      "name": "Network Line",
+      "kind": "custom",
+      "refersTo": "line-chip",
+      "description": "能力路網的一條線：線色字母方塊、6px 直條、16px 空心站點；轉乘站是 20px 墨色粗圈。線色由 --c 決定。",
+      "html": "<section class=\"ds-netline\" style=\"--c: var(--teal)\"><h3 class=\"ds-netline-title\"><span class=\"ds-line-chip\">A</span>AI Workflow 線</h3><ol class=\"ds-netline-stops\"><li class=\"ds-transfer\">TDD</li><li>模組化設計</li><li class=\"ds-transfer\">SDD</li><li>agent 規範</li><li>知識圖譜索引</li><li>MCP</li></ol></section>",
+      "css": ".ds-netline{max-width:260px;background:var(--platform);color:var(--ink);font-family:var(--font-zh)} .ds-netline-title{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:1.0625rem;font-weight:900;line-height:1.4} .ds-line-chip{display:inline-grid;place-items:center;flex:none;width:32px;height:32px;padding-top:2px;border-radius:6px;background:var(--c);color:var(--c-ink,#fff);font-family:var(--font-sign);font-size:.9375rem;font-weight:800;box-sizing:border-box} .ds-netline-stops{position:relative;margin:0;padding:0;list-style:none} .ds-netline-stops::before{content:\"\";position:absolute;top:16px;bottom:16px;left:7px;width:6px;border-radius:3px;background:var(--c)} .ds-netline-stops li{position:relative;padding:7px 0 7px 32px;font-size:.9375rem;font-weight:500;line-height:1.5} .ds-netline-stops li::before{content:\"\";position:absolute;top:50%;left:2px;width:16px;height:16px;margin-top:-8px;border:4px solid var(--c);border-radius:50%;background:var(--platform);box-sizing:border-box} .ds-netline-stops li.ds-transfer{font-weight:700} .ds-netline-stops li.ds-transfer::before{left:0;width:20px;height:20px;margin-top:-10px;border:5px solid var(--ink)}"
+    },
+    {
+      "name": "Station Info Panel",
+      "kind": "card",
+      "refersTo": "info-panel",
+      "description": "站內資訊面板：月台深底、8px 圓角、標題下 2px 深青線、深青連結底線。不是站名牌，沒有色帶。",
+      "html": "<aside class=\"ds-info\"><h3 class=\"ds-info-title\">站內資訊</h3><dl class=\"ds-info-list\"><dt>語言</dt><dd>台語　精通</dd><dd>英文　聽說讀寫略懂</dd><dt>聯絡</dt><dd><a href=\"https://github.com/GUOJIE-HONG\">github.com/GUOJIE-HONG</a></dd></dl></aside>",
+      "css": ".ds-info{max-width:300px;padding:20px 24px 24px;border-radius:8px;background:var(--platform-deep);color:var(--ink);font-family:var(--font-zh);line-height:1.75} .ds-info-title{margin:0;padding-bottom:10px;border-bottom:2px solid var(--teal);font-size:1.0625rem;font-weight:900} .ds-info-list{margin:4px 0 0} .ds-info-list dt{margin-top:14px;color:var(--ink-soft);font-size:.875rem;font-weight:700} .ds-info-list dd{margin:0;font-size:.9375rem;overflow-wrap:anywhere} .ds-info-list a{color:inherit;text-decoration-color:var(--teal);text-decoration-thickness:2px;text-underline-offset:.22em} .ds-info-list a:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "下一站：職涯路線圖",
+    "overview": "這套系統把一個人的職涯畫成一條捷運線，借用台灣捷運的三種物件：站名牌、路線圖、車廂到站顯示。月台白是地面，深藍灰看板是站名牌，琥珀色粗線是走過的經歷，深青色線是他工作時用的驗證流程。走過的站、本站、下一站各有固定畫法，讀者不看說明也知道他現在在哪、要往哪裡去。\n\n密度是月台式的：留白多，內容排在欄位裡而不是卡片裡，一條垂直主線把所有段落串成同一條路線。字重很重（站名用 900），英文用 Overpass 大寫加字距排在中文下面，站號徽章讓每一站都能被指認。用色很節制：內文一律無彩，顏色只出現在路線、站點、徽章、看板與主要按鈕上。\n\n方向合約確認拒絕的做法：以置中大頭照開場的個人頁、技能進度條、左右交錯的時間軸、卡片陰影與裝飾花紋。動態只有一段編排（載入時畫線、下一站燈號閃三下後常亮）和一個捲動回饋（迷你路線上的列車標記）。",
+    "keyCharacteristics": [
+      "月台白地面加深藍灰站名牌，兩種明度撐起全部層次，沒有陰影。",
+      "一條琥珀主線貫穿全頁，每個段落都是這條線上的一站。",
+      "經歷線上的站點三態：走過實心、本站雙圈、下一站虛線空心。",
+      "中文粗黑站名在上，Overpass 英文大寫在下，站號徽章在站名前面。",
+      "路線只走水平與垂直，窄螢幕時轉成垂直，而不是縮小。",
+      "唯一的編排動畫只跑一次，減少動態時直接呈現完成狀態。"
+    ],
+    "rules": [
+      {
+        "name": "The Lines-and-Signs Rule",
+        "body": "月台上的文字只用 `ink` 與 `ink-soft`。顏色只出現在路線、站點、站號徽章、看板與主要按鈕上；看板上的琥珀字（例如「本站」標籤）屬於看板字，不算內文。",
+        "section": "colors"
+      },
+      {
+        "name": "The One Line, One Meaning Rule",
+        "body": "每個路線色只代表一件事：琥珀是經歷主線與往下一站的動作，深青是驗證流程，藍與褐只屬於能力路網的線，灰只屬於已過站支線。新增顏色之前，先說出它是哪一條線。",
+        "section": "colors"
+      },
+      {
+        "name": "The Never-Alone Rule",
+        "body": "琥珀線與灰色支線在月台白上的對比很低（約 1.9:1），所以它們永遠和深色站點、文字標示一起出現，不單獨承載意義，也不拿來當月台上的文字色。",
+        "section": "colors"
+      },
+      {
+        "name": "The Bilingual Sign Rule",
+        "body": "中文站名在上、用 900；英文在下、用 Overpass 大寫加字距，顏色降一階。英文永遠不放在中文上方當小標。",
+        "section": "typography"
+      },
+      {
+        "name": "The Code-Before-Name Rule",
+        "body": "有站號的站（GJ01–GJ05、V、V01–V05）把站號徽章放在站名同一行的最前面，不另起一行。沒有站號的段落（能力路網、已過站）只有站名，不補假站號。",
+        "section": "typography"
+      },
+      {
+        "name": "The Single Spine Rule",
+        "body": "hero 與 GJ05 看板之間的每一段都掛在同一條垂直琥珀脊線上：站點圓心落在脊線上，並對齊站名第一行。要加新段落，就是在脊線上加一站。",
+        "section": "layout"
+      },
+      {
+        "name": "The Turn, Don't Shrink Rule",
+        "body": "橫向路線（hero 路線條、驗證流程線）在 ≤719px 轉成垂直，站名靠左排在線的右側；不把五欄等比縮小，也不改成橫向捲動。",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Platform Rule",
+        "body": "看板、面板、按鈕、徽章在任何狀態下都不加陰影、漸層或紋理。唯一的陰影屬於會蓋住內容的浮動選單。",
+        "section": "elevation"
+      },
+      {
+        "name": "The Three Stops Rule",
+        "body": "經歷線上的站只有三種狀態：走過是 `sign` 實心、本站是雙圈、下一站是虛線空心。其他線上的站是該線顏色的空心圈；轉乘與交會一律是 `ink` 粗圈；移到已過站支線的站是 `ink-soft` 空心圈。沒有第四種狀態。",
+        "section": "shapes"
+      },
+      {
+        "name": "The Dashed Future Rule",
+        "body": "虛線只代表還沒發生的事：本站到下一站的路段（`line-w` 粗、18 / 12 節奏）與下一站的虛線圈。走過的路永遠是實線。",
+        "section": "shapes"
+      },
+      {
+        "name": "The Name Board Rule",
+        "body": "深色看板加 14px 琥珀頂帶只屬於站名牌：hero 的姓名看板與 GJ05 下一站看板。其他資訊面板一律用站內資訊面板的樣式（月台深底、2px 深青標題線、沒有色帶）。",
+        "section": "components"
+      },
+      {
+        "name": "The One Authored Moment Rule",
+        "body": "全頁只有一段編排動畫：載入時路線從 GJ01 畫到本站（每段 0.42s、每站間隔 0.36s，站點以 0.4s 從 0 放大），1.08s 時虛線接到下一站，1.9s 起「下一站」標籤以 steps(1, end) 閃三下（每下 0.56s，暗到 0.18）後常亮。完成狀態就是預設狀態，動畫只在 `prefers-reduced-motion: no-preference` 時由 JS 啟動；垂直版改用縱向展開。其他動態只有 0.2s 的狀態轉換與列車標記的滑動。",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do 讓月台上的文字維持 `ink` / `ink-soft`，把顏色留給路線、站點、徽章、看板與主要按鈕。",
+      "Do 所有主要路線用同一個粗細 `line-w`（桌機 12px，≤719px 10px）；走過的路用實線，往下一站用 18 / 12 虛線。",
+      "Do 新增站點時從 The Three Stops Rule 挑一種畫法；本站永遠是雙圈。",
+      "Do 次要資訊用站內資訊面板：`platform-deep` 底、8px 圓角、標題下 2px `teal` 線。",
+      "Do 寄信（琥珀實心）與下載履歷（框線）成對出現；月台上的框線按鈕用 `ink`，看板上的用 `sign-soft`。",
+      "Do 焦點框在月台上用 3px `teal`（offset 3px），在深色看板上改用 `amber`。",
+      "Do 狀態轉換用 0.2s 與 `cubic-bezier(0.16, 1, 0.3, 1)`；任何編排動畫都讓完成狀態當預設，並尊重減少動態設定。",
+      "Do 窄螢幕把橫向路線轉成垂直，保持站點、線與站名的對齊。"
+    ],
+    "donts": [
+      "Don't 在看板、面板或按鈕上加陰影、漸層或花紋；唯一的陰影屬於浮動的路線選單。",
+      "Don't 把「深色底加琥珀頂帶」用在站名牌以外的面板。",
+      "Don't 用路線色（琥珀、深青、藍、褐、灰）當月台上的內文顏色，或讓琥珀線、灰色支線單獨承載意義。",
+      "Don't 畫水平與垂直以外的路線；真的需要轉折時只能是 45 度。",
+      "Don't 用置中大頭照開場、技能進度條或百分比、左右交錯的時間軸。",
+      "Don't 在站名上方加小標或眉標；站號放在站名前面，英文放在站名下面。",
+      "Don't 在路線圖上使用真實的捷運站名；站名只能是職涯裡的站。",
+      "Don't 拿掉大頭照或 GJ 圓徽；它們是必須保留的品牌資產。"
+    ]
+  }
+}
