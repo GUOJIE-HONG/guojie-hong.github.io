@@ -24,7 +24,7 @@ web
 
 ## Operating Context
 
-- 網站網址 https://guojie-hong.github.io/PortfolioWeb/ 印在履歷上,讀者通常是從履歷進來;網站也提供履歷下載,兩者會被互相對照。
+- 網站網址 https://guojie-hong.github.io/ 印在履歷上,讀者通常是從履歷進來;網站也提供履歷下載,兩者會被互相對照。
 - 部署在 GitHub Pages（靜態網站,沒有後端）。
 - GitHub 帳號已從 `GUOJIE526` 改名為 `GUOJIE-HONG`（2026-09 確認）。舊網址 `guojie526.github.io` 與 `github.com/GUOJIE526` 都已失效（404）;舊版 `file/Resume.pdf` 與面試資料 PDF 上印的仍是舊網址,換新履歷時要一併更新。
 - 語言:**繁體中文為主**,技術名詞保留英文原文（例如 ASP.NET Core、SignalR）。

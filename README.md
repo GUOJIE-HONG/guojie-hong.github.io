@@ -2,7 +2,7 @@
 
 ASP.NET / C# 後端工程師洪國傑（GuoJie）的單頁個人介紹網站。版面以捷運路線圖為主題：走過的站是經歷，本站是現職，下一站是聯絡方式。
 
-**[Click Me](https://guojie-hong.github.io/PortfolioWeb/)** to view the live page.
+**[Click Me](https://guojie-hong.github.io/)** to view the live page.
 
 ## ✨ 內容 (Sections)
 
